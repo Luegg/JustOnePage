@@ -1,12 +1,12 @@
 <?php
 
-namespace JustOneBlog;
+namespace JustOneBlog\Kernel;
 
 use Symfony\Component\Config\FileLocator;
 
 class ConfigLocatorFactory implements FactoryInterface{
 
     public function get(){
-        return new FileLocator(__DIR__ . '/../../config/');
+        return new FileLocator(__DIR__ . '/../../../config/');
     }
 }

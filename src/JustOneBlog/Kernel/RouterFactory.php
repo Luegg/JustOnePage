@@ -1,6 +1,6 @@
 <?php
 
-namespace JustOneBlog;
+namespace JustOneBlog\Kernel;
 
 use Symfony\Component\Config\FileLocatorInterface;
 use Symfony\Component\Routing\Loader\YamlFileLoader;

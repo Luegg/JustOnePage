@@ -1,11 +1,11 @@
 services:
     config_locator:
         class: Symfony\Component\Config\FileLocator
-        factory_class: JustOneBlog\ConfigLocatorFactory
+        factory_class: JustOneBlog\Kernel\ConfigLocatorFactory
         factory_method: get
 
     service_container_factory:
-        class: JustOneBlog\ServiceContainerFactory
+        class: JustOneBlog\Kernel\ServiceContainerFactory
         arguments:
             - "@config_locator"
 
@@ -16,11 +16,11 @@ services:
 
     request:
         class: Symfony\Component\HttpFoundation\Request
-        factory_class: JustOneBlog\RequestFactory
+        factory_class: JustOneBlog\Kernel\RequestFactory
         factory_method: get
 
     router_factory:
-        class: JustOneBlog\RouterFactory
+        class: JustOneBlog\Kernel\RouterFactory
         arguments:
             - @config_locator
             - @request
@@ -31,14 +31,14 @@ services:
         factory_method: get
 
     application:
-        class: JustOneBlog\App
+        class: JustOneBlog\Kernel\App
         arguments:
             - "@service_container"
             - "@router"
             - "@request"
 
     controller_invoker:
-        class: JustOneBlog\Controller\Invoker
+        class: JustOneBlog\Kernel\ControllerInvoker
         arguments:
             - "@router"
             - "@request"

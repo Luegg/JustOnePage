@@ -1,6 +1,6 @@
 <?php
 
-namespace JustOneBlog;
+namespace JustOneBlog\Kernel;
 
 interface FactoryInterface{
 

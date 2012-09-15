@@ -1,6 +1,6 @@
 <?php
 
-namespace JustOneBlog;
+namespace JustOneBlog\Kernel;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Routing\RouterInterface;

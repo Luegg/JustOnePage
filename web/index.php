@@ -2,8 +2,8 @@
 
 require_once '../config/bootstrap.php';
 
-use JustOneBlog\ServiceContainerFactory;
-use JustOneBlog\ConfigLocatorFactory;
+use JustOneBlog\Kernel\ServiceContainerFactory;
+use JustOneBlog\Kernel\ConfigLocatorFactory;
 
 $clFactory = new ConfigLocatorFactory();
 $factory = new ServiceContainerFactory(

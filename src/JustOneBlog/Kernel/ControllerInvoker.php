@@ -1,11 +1,11 @@
 <?php
 
-namespace JustOneBlog\Controller;
+namespace JustOneBlog\Kernel;
 
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class Invoker{
+class ControllerInvoker{
 
     private $router;
 
