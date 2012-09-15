@@ -1,0 +1,29 @@
+get_blog:
+    pattern: /
+    defaults: { _controller: Blog:get}
+    requirements:
+        _method: GET
+
+get_post:
+    pattern: /post/{slug}
+    defaults: { _controller: Post:get }
+    requirements:
+        _method: GET
+
+post_post:
+    pattern: /post/
+    defaults: { _controller: Post:post}
+    requirements:
+        _method: POST
+
+put_post:
+    pattern: /post/{slug}
+    defaults: { _controller: Post:put}
+    requirements:
+        _method: POST
+
+delete_post:
+    pattern: /post/{slug}/delete
+    defaults: { _controller: Post:delete}
+    requirements:
+        _method: POST

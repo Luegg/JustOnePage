@@ -1,0 +1,37 @@
+{
+    "hash": "305037782e7172f88ca91da2baaba492",
+    "packages": [
+        {
+            "package": "symfony/class-loader",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/config",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/dependency-injection",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/http-foundation",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/routing",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/yaml",
+            "version": "v2.1.1"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ]
+}
