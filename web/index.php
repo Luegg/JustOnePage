@@ -2,15 +2,9 @@
 
 require_once '../config/bootstrap.php';
 
-use JustOneBlog\Kernel\ServiceContainerFactory;
-use JustOneBlog\Kernel\ConfigLocatorFactory;
+use JustOneBlog\Kernel\App;
 
-$clFactory = new ConfigLocatorFactory();
-$factory = new ServiceContainerFactory(
-        $clFactory->get()
-    );
-$container = $factory->get();
+$app = App::init();
 
-$invoker = $container->get('controller_invoker');
-
+$invoker = $app->get('controller_invoker');
 $invoker->invokeFromGlobals();

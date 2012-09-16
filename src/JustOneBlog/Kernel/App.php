@@ -5,6 +5,8 @@ namespace JustOneBlog\Kernel;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\HttpFoundation\Request;
+use JustOneBlog\Kernel\ServiceContainerFactory;
+use JustOneBlog\Kernel\ConfigLocatorFactory;
 
 class App{
     private $container;
@@ -29,5 +31,15 @@ class App{
 
     function getRequest(){
         return $this->request;
+    }
+
+    static function init(){
+        $clFactory = new ConfigLocatorFactory();
+        $factory = new ServiceContainerFactory(
+                $clFactory->get()
+            );
+        $container = $factory->get();
+
+        return $container->get('application');
     }
 }
