@@ -30,13 +30,6 @@ services:
         factory_service: router_factory
         factory_method: get
 
-    application:
-        class: JustOnePage\Kernel\App
-        arguments:
-            - "@service_container"
-            - "@router"
-            - "@request"
-
     controller_invoker:
         class: JustOnePage\Kernel\ControllerInvoker
         arguments:
