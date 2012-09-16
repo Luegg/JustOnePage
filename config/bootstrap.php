@@ -13,6 +13,7 @@ call_user_func(function(){
             'Symfony\\Component\\ClassLoader' => __DIR__ . '/../vendor/symfony/class-loader',
             'Symfony\\Component\\Config' => __DIR__ . '/../vendor/symfony/config',
             'Symfony\\Component\\DependencyInjection' => __DIR__ . '/../vendor/symfony/dependency-injection',
+            'Symfony\\Component\\Finder' => __DIR__ . '/../vendor/symfony/finder',
             'Symfony\\Component\\HttpFoundation' => __DIR__ . '/../vendor/symfony/http-foundation',
             'Symfony\\Component\\Routing' => __DIR__ . '/../vendor/symfony/routing',
             'Symfony\\Component\\Yaml' => __DIR__ . '/../vendor/symfony/yaml',

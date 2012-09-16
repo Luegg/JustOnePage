@@ -1,6 +1,12 @@
 {
-    "hash": "305037782e7172f88ca91da2baaba492",
+    "hash": "80ccb20098f9b416a0cda04f67eb2c0c",
     "packages": [
+        {
+            "package": "noonat/pecs",
+            "version": "dev-master",
+            "source-reference": "0b911eebf01e5762d25dfe53bc85dcc60801e3ed",
+            "commit-date": "1341932972"
+        },
         {
             "package": "symfony/class-loader",
             "version": "v2.1.1"
@@ -11,6 +17,10 @@
         },
         {
             "package": "symfony/dependency-injection",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "symfony/finder",
             "version": "v2.1.1"
         },
         {
@@ -31,7 +41,7 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "noonat/pecs": 20
+    }
 }
