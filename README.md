@@ -1,8 +1,8 @@
-# JustOneBlog
+# JustOnePage
 
 ## The Mission
 
-JustOneBlog aught to be a lightweight, super fancy blog software.
+JustOnePage aught to be a lightweight, super fancy blog software.
 
 * NoDB used for data storage! Instead save ressources directly to JSON files.
 * RESTlike interface! I don't know if it's even possible to do something truly RESTfull in PHP.

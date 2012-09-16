@@ -16,7 +16,7 @@ call_user_func(function(){
             'Symfony\\Component\\HttpFoundation' => __DIR__ . '/../vendor/symfony/http-foundation',
             'Symfony\\Component\\Routing' => __DIR__ . '/../vendor/symfony/routing',
             'Symfony\\Component\\Yaml' => __DIR__ . '/../vendor/symfony/yaml',
-            'JustOneBlog' => __DIR__ . '/../src',
+            'JustOnePage' => __DIR__ . '/../src',
         ));
 
     $loader->register();

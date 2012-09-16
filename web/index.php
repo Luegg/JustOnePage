@@ -2,7 +2,7 @@
 
 require_once '../config/bootstrap.php';
 
-use JustOneBlog\Kernel\App;
+use JustOnePage\Kernel\App;
 
 $app = App::init();
 

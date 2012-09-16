@@ -1,12 +1,12 @@
 <?php
 
-namespace JustOneBlog\Kernel;
+namespace JustOnePage\Kernel;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\HttpFoundation\Request;
-use JustOneBlog\Kernel\ServiceContainerFactory;
-use JustOneBlog\Kernel\ConfigLocatorFactory;
+use JustOnePage\Kernel\ServiceContainerFactory;
+use JustOnePage\Kernel\ConfigLocatorFactory;
 
 class App{
     private $container;

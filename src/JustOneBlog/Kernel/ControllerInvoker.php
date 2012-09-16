@@ -1,6 +1,6 @@
 <?php
 
-namespace JustOneBlog\Kernel;
+namespace JustOnePage\Kernel;
 
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\HttpFoundation\Request;
