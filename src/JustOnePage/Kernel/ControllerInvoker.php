@@ -18,7 +18,6 @@ class ControllerInvoker{
 
     function invokeFromGlobals(){
         $route = $this->router->match($this->request->getPathInfo());
-        var_dump($route);
         $this->invoke($route);
     }
 
