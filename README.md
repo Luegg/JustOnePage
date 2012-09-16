@@ -2,7 +2,7 @@
 
 ## The Mission
 
-JustOnePage aught to be a lightweight, super fancy blog software.
+JustOnePage aught to be a lightweight, super fancy CMS like software. Each app (e.g. a blog, static pages...) is just one html page. So if you like to get a customized blog, just edit this single template and ship it to your server. And you're done!
 
 * NoDB used for data storage! Instead save ressources directly to JSON files.
 * RESTlike interface! I don't know if it's even possible to do something truly RESTfull in PHP.
