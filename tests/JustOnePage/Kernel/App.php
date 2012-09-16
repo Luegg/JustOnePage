@@ -1,6 +1,6 @@
 <?php
 
-use JustOnePage\Kernel\App;
+namespace JustOnePage\Kernel;
 
 describe("the App class", function(){
 

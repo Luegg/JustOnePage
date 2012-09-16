@@ -1,29 +1,29 @@
 get_blog:
     pattern: /
-    defaults: { _controller: Blog:get}
+    defaults: { _controller: JustOneBlog\BlogController::get}
     requirements:
         _method: GET
 
 get_post:
     pattern: /post/{slug}
-    defaults: { _controller: Post:get }
+    defaults: { _controller: JustOneBlog\PostController::get }
     requirements:
         _method: GET
 
 post_post:
     pattern: /post/
-    defaults: { _controller: Post:post}
+    defaults: { _controller: JustOneBlog\PostController::post}
     requirements:
         _method: POST
 
 put_post:
     pattern: /post/{slug}
-    defaults: { _controller: Post:put}
+    defaults: { _controller: JustOneBlog\PostController::put}
     requirements:
         _method: POST
 
 delete_post:
     pattern: /post/{slug}/delete
-    defaults: { _controller: Post:delete}
+    defaults: { _controller: JustOneBlog\PostController::delete}
     requirements:
         _method: POST
